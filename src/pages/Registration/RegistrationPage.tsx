@@ -32,6 +32,8 @@ const RegistrationPage = () => {
       return;
     }
   }, []);
+  setCookie;
+  removeCookie;
   const checkAdmin = (email: string) => {
     if (email.includes(".admin")) {
       return email.slice(0, email.indexOf(".admin"));
